@@ -70,10 +70,10 @@
 
 2. **コードの編集**
 
-    `handler.js` ファイルを以下の内容に置き換えます：
+    `index.js` ファイルを以下の内容に置き換えます：
 
     ```javascript
-    // handler.js
+    // index.js
 
     const axios = require('axios');
     const cheerio = require('cheerio');
@@ -218,7 +218,7 @@
 
     functions:
       monitor:
-        handler: handler.monitor
+        index: index.monitor
         events:
           - schedule:
               rate: rate(1 hour)  # 毎時実行
